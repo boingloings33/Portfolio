@@ -10,6 +10,17 @@ body {
   display: none;
 }
 
+img {
+  height: 350px;
+  object-fit: cover;
+  object-position: 25% 25%;
+}
+
+#accordion-3 img {
+  object-fit: cover;
+  object-position: 55% 55%;
+}
+
 p.title {
   text-align: center;
   font-size: 46px;
