@@ -56,10 +56,6 @@ strong {
   filter: blur(0);
 }
 
-.hidden {
-  display: none;
-}
-
 .accordion {
   box-shadow: 0px 1px 7px #dbdbdb;
 }

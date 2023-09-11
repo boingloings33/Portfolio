@@ -1,14 +1,22 @@
 jQuery(function () {
   $(".head").on("click", function () {
     let isActive = $(this).hasClass("active");
-    this.scrollIntoView({ behavior: "smooth", inline: "nearest" });
+
     $(".head").removeClass("active");
     $(".head").parent().find(".content").slideUp(280);
     $(".head").parent().find(".arrow").removeClass("arrow-animate");
     if (isActive === false) {
       $(this).addClass("active");
       $(this).parent().find(".arrow").addClass("arrow-animate");
-      $(this).parent().find(".content").slideDown(280);
+      $(this)
+        .parent()
+        .find(".content")
+        .slideDown(280, function () {
+          this.closest(".accordion").scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        });
     }
   });
   $("img").on("mouseenter", function () {
