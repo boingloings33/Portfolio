@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,900);
+
+body {
+  font-family: Lato;
+  background: linear-gradient(rgb(135, 184, 182), rgb(204, 171, 193));
+  margin-bottom: 24px;
+}
+
+p.title {
+  text-align: center;
+  font-size: 46px;
+  color: #efdeff;
+}
+
+strong {
+  color: #ffffff;
+  font-size: 56px;
+}
+
+p.remarks,
+a {
+  text-align: center;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.content {
+  position: relative;
+}
+
+.content h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.preview-pics {
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.3;
+  filter: blur(3px);
+  transition: 0.2s ease;
+}
+
+.preview-pics:hover {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.hidden {
+  display: none;
+}
+
+.accordion {
+  box-shadow: 0px 1px 7px #dbdbdb;
+}
+
+.accordion .head {
+  background-color: #ffffff;
+  color: #563e6e;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion .arrow {
+  color: #563e6e;
+  font-size: 60px;
+  transition: 0.25s ease;
+  opacity: 0.3;
+  transform: rotate(-90deg);
+}
+
+.accordion .head:hover .arrow {
+  opacity: 1;
+}
+
+.accordion .head:hover,
+.accordion .active {
+  background-color: #ffe77aff;
+}
+
+.accordion .arrow-animate {
+  transform: rotate(-180deg);
+  opacity: 1;
+}
+
+.accordion .content {
+  background-color: #ffffff;
+  display: none;
+  padding: 20px 30px;
+  color: #333333;
+}
