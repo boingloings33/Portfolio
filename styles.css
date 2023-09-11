@@ -25,6 +25,7 @@ strong {
   margin: 0 auto;
   width: 800px;
   height: 760px;
+  overflow: hidden;
 }
 
 .image-text {
