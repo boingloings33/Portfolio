@@ -2,14 +2,13 @@
 
 body {
   font-family: Lato;
-  background: linear-gradient(rgb(135, 184, 182), rgb(204, 171, 193));
-  margin-bottom: 24px;
+  background: linear-gradient(rgb(142, 215, 213), rgb(204, 171, 193));
 }
 
 p.title {
   text-align: center;
   font-size: 46px;
-  color: #efdeff;
+  color: #ede1f9;
 }
 
 strong {
@@ -17,19 +16,18 @@ strong {
   font-size: 56px;
 }
 
-p.remarks,
-a {
-  text-align: center;
-  color: #ffffff;
+.content p {
+  font-size: 18px;
+  font-weight: 600;
 }
-
 .container {
   width: 100%;
   margin: 0 auto;
   width: 800px;
+  margin-bottom: 24px;
 }
 
-.content {
+.image-text {
   position: relative;
 }
 
