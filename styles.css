@@ -2,13 +2,18 @@
 
 body {
   font-family: Lato;
-  background: linear-gradient(rgb(142, 215, 213), rgb(204, 171, 193));
+  background: rgb(142, 215, 213);
+  overflow-y: scroll;
+}
+
+#content::-webkit-scrollbar {
+  display: none;
 }
 
 p.title {
   text-align: center;
   font-size: 46px;
-  color: #ede1f9;
+  color: #563e6e;
 }
 
 strong {
@@ -24,7 +29,6 @@ strong {
   width: 100%;
   margin: 0 auto;
   width: 800px;
-  overflow: hidden;
 }
 
 .preview-pics {
@@ -87,4 +91,8 @@ strong {
   display: none;
   padding: 20px 30px;
   color: #333333;
+}
+
+#accordion-5 {
+  margin-bottom: 48px;
 }
