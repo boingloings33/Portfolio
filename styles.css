@@ -21,6 +21,11 @@ img {
   object-position: 55% 55%;
 }
 
+#accordion-2 img {
+  object-fit: cover;
+  object-position: 55% 5%;
+}
+
 p.title {
   text-align: center;
   font-size: 46px;
